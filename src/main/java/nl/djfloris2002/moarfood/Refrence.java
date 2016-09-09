@@ -10,7 +10,8 @@ public class Refrence {
     public static final String SERVER_PROXY_CLASS = "nl.djfloris2002.moarfood.proxy.ServerProxy";
 
     public static enum MoarFoodItems{
-        EMPTYPIZZA("emptyPizza", "ItemEmptyPizza");
+        EMPTYPIZZA("emptyPizza", "ItemEmptyPizza"),
+        CHEESE("cheese", "ItemCheese");
 
         private String unlocalizedName;
         private String registryName;

@@ -4,29 +4,30 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import nl.djfloris2002.moarfood.Refrence;
+import nl.djfloris2002.moarfood.items.ItemCheese;
 import nl.djfloris2002.moarfood.items.ItemEmptyPizza;
 
-/**
- * Created by Floris on 9/9/2016.
- */
 public class ModItems {
 
     public static Item emptyPizza;
+    public static Item cheese;
 
     public static void init(){
         emptyPizza = new ItemEmptyPizza();
+        cheese = new ItemCheese();
     }
 
     public static void register(){
         GameRegistry.register(emptyPizza);
+        GameRegistry.register(cheese);
     }
 
     public static void registerRenders(){
         registerRender(emptyPizza);
+        registerRender(cheese);
     }
 
     public static void registerRender(Item item){
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Refrence.MOD_ID+":" + item.getUnlocalizedName().substring(5), "inventory"));
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
     }
 }
