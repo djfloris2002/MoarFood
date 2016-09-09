@@ -1,0 +1,16 @@
+[
+{
+  "modid": "djf_moarfood",
+  "name": "Moar Food",
+  "description": "Gives you more food. Yay.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "FlorisBurger.com",
+  "updateUrl": "",
+  "authorList": ["djfloris2002"],
+  "credits": "Redbull, for keeping me awake.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
