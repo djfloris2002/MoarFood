@@ -11,12 +11,34 @@ public class Refrence {
 
     public static enum MoarFoodItems{
         EMPTYPIZZA("emptyPizza", "ItemEmptyPizza"),
+        BASEPIZZA("basePizza", "ItemBasePizza"),
         CHEESE("cheese", "ItemCheese");
 
         private String unlocalizedName;
         private String registryName;
 
         MoarFoodItems(String unlocalizedName, String  registryName){
+            this.unlocalizedName = unlocalizedName;
+            this.registryName = registryName;
+        }
+
+        public String getUnlocalizedName(){
+            return unlocalizedName;
+        }
+
+        public String getRegistryName(){
+            return registryName;
+        }
+    }
+
+    public static enum MoarFoodBlocks{
+        CHEESE("cheese", "BlockCheese"),
+        WHITE("white", "BlockWhite");
+
+        private String unlocalizedName;
+        private String registryName;
+
+        MoarFoodBlocks(String unlocalizedName, String  registryName){
             this.unlocalizedName = unlocalizedName;
             this.registryName = registryName;
         }
