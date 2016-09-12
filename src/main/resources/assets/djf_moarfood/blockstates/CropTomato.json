@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "djf_moarfood:CropTomato0" },
+    "age=1": { "model": "djf_moarfood:CropTomato0" },
+    "age=2": { "model": "djf_moarfood:CropTomato1" },
+    "age=3": { "model": "djf_moarfood:CropTomato1" },
+    "age=4": { "model": "djf_moarfood:CropTomato2" },
+    "age=5": { "model": "djf_moarfood:CropTomato2" },
+    "age=6": { "model": "djf_moarfood:CropTomato2" },
+    "age=7": { "model": "djf_moarfood:CropTomato3" }
+  }
+}

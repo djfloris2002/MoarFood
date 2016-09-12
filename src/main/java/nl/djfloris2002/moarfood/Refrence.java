@@ -12,7 +12,9 @@ public class Refrence {
     public static enum MoarFoodItems{
         EMPTYPIZZA("emptyPizza", "ItemEmptyPizza"),
         BASEPIZZA("basePizza", "ItemBasePizza"),
-        CHEESE("cheese", "ItemCheese");
+        CHEESE("cheese", "ItemCheese"),
+        TOMATO("tomato", "ItemTomato"),
+        TOMATOSEEDS("tomatoSeeds", "ItemTomatoSeeds");
 
         private String unlocalizedName;
         private String registryName;
@@ -39,6 +41,26 @@ public class Refrence {
         private String registryName;
 
         MoarFoodBlocks(String unlocalizedName, String  registryName){
+            this.unlocalizedName = unlocalizedName;
+            this.registryName = registryName;
+        }
+
+        public String getUnlocalizedName(){
+            return unlocalizedName;
+        }
+
+        public String getRegistryName(){
+            return registryName;
+        }
+    }
+
+    public static enum MoarFoodCrops{
+        TOMATO("cropTomato", "CropTomato");
+
+        private String unlocalizedName;
+        private String registryName;
+
+        MoarFoodCrops(String unlocalizedName, String  registryName){
             this.unlocalizedName = unlocalizedName;
             this.registryName = registryName;
         }

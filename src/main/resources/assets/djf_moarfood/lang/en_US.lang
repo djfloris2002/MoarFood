@@ -1,5 +1,6 @@
 item.emptyPizza.name=Empty Pizza
-item.emptyPizza.name=Pizza Base-
+item.basePizza.name=Pizza Base
 item.cheese.name=Cheese
+item.tomato.name=Tomato
 
 tile.cheese.name=Cheese Block

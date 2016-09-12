@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import nl.djfloris2002.moarfood.init.ModBlocks;
+import nl.djfloris2002.moarfood.init.ModCrafting;
 import nl.djfloris2002.moarfood.init.ModItems;
 import nl.djfloris2002.moarfood.proxy.CommonProxy;
 
@@ -31,6 +32,7 @@ public class Main {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
         proxy.init();
+        ModCrafting.register();
     }
 
     @Mod.EventHandler

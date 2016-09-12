@@ -8,6 +8,7 @@ import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import nl.djfloris2002.moarfood.blocks.BlockCheese;
 import nl.djfloris2002.moarfood.blocks.BlockWhite;
+import nl.djfloris2002.moarfood.blocks.crops.CropTomato;
 
 /**
  * Created by Floris on 9/10/2016.
@@ -16,13 +17,16 @@ public class ModBlocks {
 
     public static Block cheese;
     public static Block white;
+    public static Block tomatoPlant;
 
     public static void init(){
+        tomatoPlant = new CropTomato();
         cheese = new BlockCheese();
         white = new BlockWhite();
     }
 
     public static void register(){
+        registerBlock(tomatoPlant);
         registerBlock(cheese);
         registerBlock(white);
     }
